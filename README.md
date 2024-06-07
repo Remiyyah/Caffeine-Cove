@@ -1,71 +1,112 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Caffeine Cove
 
-In the project directory, you can run:
+Welcome to the repository for **Caffeine Cove**, a React-based web application showcasing the best coffee in town.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
+- [Introduction](#introduction)
+- [Components](#components)
+- [Dependencies](#dependencies)
+- [Getting Started](#getting-started)
+- [Deployment](#deployment)
+  - [GitHub Pages](#github-pages)
+  
+
+
+## Introduction
+
+Caffeine Cove is a React application that provides information about various coffee beverages. The site features a HomePage and a Coffee component, each designed to offer users a visually appealing and informative experience.
+
+## Components
+
+### HomePage
+
+The HomePage component welcomes users to Caffeine Cove. It includes a navigation bar, a main section with information about the coffee shop, and a subscription form.
+
+### Coffee
+
+The Coffee component presents detailed information about different coffee drinks, using Javascript to create a visually dynamic split-screen slider.
+
+## Dependencies
+
+This project relies on the following dependencies:
+
+- React
+- React DOM
+- React Router DOM
+- Pico CSS (used in HomePage component)
+
+## Getting Started
+<details>
+<summary>Installation</summary>
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/remiyyah/Caffeine-Cove.git
+   cd Caffeine-Cove
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running the App
+
+To run the app locally, use the following command:
+
+```bash
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
+<details>
+<summary>GitHub Pages</summary>
 
-### `npm test`
+1. Add `homepage` to `package.json`:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```json
+   "homepage": "https://[github username].github.io/[repo name]"
+   ```
 
-### `npm run build`
+2. Add deployment scripts to `package.json`:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
+     "start": "react-scripts start",
+     "build": "react-scripts build",
+     "test": "react-scripts test",
+     "eject": "react-scripts eject"
+   }
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install `gh-pages`:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install --save gh-pages
+   ```
 
-### `npm run eject`
+4. Deploy the app:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm run deploy
+   ```
+   </details>
+---
+Link to website: https://remiyyah.github.io/Caffeine-Cove/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Demo images:
+<img width="1426" alt="Screenshot 2024-06-06 at 7 09 16 PM" src="https://github.com/Remiyyah/Caffeine-Cove/assets/116331106/360a91e5-1463-4ce4-8db0-74f4109dfae2">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="1440" alt="Screenshot 2024-06-06 at 7 39 40 PM" src="https://github.com/Remiyyah/Caffeine-Cove/assets/116331106/d8a2b7e8-b513-46bf-873b-9f66cb57a9ff">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Caffeine-Cove
